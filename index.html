@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="mt-5 container d-flex justify-content-center align-items-center " >
+        <form style="border-radius: 20px;" class="bg-secondary w-100 mx-auto d-flex align-items-center flex-column" action="https://echo.htmlacademy.ru">
+            <h1 class="mt-5 header">Welcome</h1>
+            <div class="mt-5 mb-5 w-50">
+                <label class="hero-inner">
+                    <span class="span-2">$</span>
+                    <input class="hero" type="number" id="inputdol" placeholder="$ write the amount" oninput="moneyConverter(this.value)" onchange="moneyConverter(this.value)">
+                </label>
+
+            </div>
+            <div class="mb-5">
+                <label>
+                    <span  class="span-1">USD:</span>
+                    <select class="">
+                        <option  id="outputrub" value="10000">10860:</option>
+                    </select>
+                </label>
+                <label>
+                    <span class="span-1">EURO:</span>
+                    <select>
+                        <option id="outputrub1" value="10000">11074:</option>
+                    </select>
+                </label>
+                <label>
+                    <span class="span-1">RUBL:</span>
+                    <select class="m">
+                        <option id="outputrub2" value="10000">60:</option>
+                    </select>
+                </label>
+            </div>
+            <button class="btn  btn-warning w-50 mb-5" type="submit">Confirmation</button>
+        </form>
+    </div>
+
+
+
+
+
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
